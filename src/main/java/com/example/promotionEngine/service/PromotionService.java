@@ -9,5 +9,6 @@ import java.util.Map;
 
 public interface PromotionService {
     Map<String, Promotion> getPromotionRules();
+
     BigDecimal getPromotionPriceForCombinedItem(List<Order> orderList, BigDecimal totalPrice);
 }
